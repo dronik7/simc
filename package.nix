@@ -3,14 +3,17 @@
 }:
 pkgs.stdenv.mkDerivation rec {
   pname = "simc";
-  version = "0";
+  version = "thewarwithin";
 
+  # https://github.com/simulationcraft/simc
   src = pkgs.fetchFromGitHub {
     owner = "simulationcraft";
     repo = pname;
-    rev = "d62e149c49b91e344630297b1ddedf9b66ecd162";
+    rev = "20093141406da828118beff9b795a0f4a72db684";
     hash = "sha256-HShnYblhi1SK0WJTj/tnKNL6Jw6h7l5ZZmCzG9avEss=";
   };
+
+  target = "release";
 
   nativeBuildInputs = with pkgs; [
     cmake
@@ -18,4 +21,8 @@ pkgs.stdenv.mkDerivation rec {
     libsForQt5.qt5.qtwebengine
     libsForQt5.qt5.wrapQtAppsHook
   ];
+
+  meta = {
+    mainProgram = "SimulationCraft";
+  };
 }
