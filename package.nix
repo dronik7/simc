@@ -9,8 +9,8 @@ pkgs.stdenv.mkDerivation rec {
   src = pkgs.fetchFromGitHub {
     owner = "simulationcraft";
     repo = pname;
-    rev = "20093141406da828118beff9b795a0f4a72db684";
-    hash = "sha256-HShnYblhi1SK0WJTj/tnKNL6Jw6h7l5ZZmCzG9avEss=";
+    rev = "9054cfda7e9af087be7bc3bc8c94adae7b26fd0a";
+    hash = "sha256-BbvdWUuGMkTfmgkvrSgyMm7dYqdH4XgKLk2lrm5AdYQ=";
   };
 
   target = "release";
