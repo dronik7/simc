@@ -1,3 +1,3 @@
-# [nix](https://nixos.org) package for [simc](https://github.com/simulationcraft/simc)
+# [simc](https://github.com/simulationcraft/simc) package for [nix](https://nixos.org)
 
 `nix run github:dronik7/simc`
